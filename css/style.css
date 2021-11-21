@@ -837,8 +837,8 @@ body .theme-button:hover span {opacity: 1;}
 }
 .apps-overview .inner-wrapper .x-mockup {
   position: absolute;
-  left: 250px;
-  bottom:-165px;
+  left: -400px;
+  bottom:-130px;
   z-index: 1;
 }
 .apps-overview.color-two {background: #111ba8;margin-bottom: 0;}
