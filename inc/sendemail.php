@@ -1,8 +1,8 @@
 <?php
 
     $to = "pinkshibatoken@gmail.com";
-    $from = $_REQUEST['pinkshibatoken@gmail.com'];
-    $name = $_REQUEST['PINKSHIBA Token'];
+    $from = $_REQUEST['email'];
+    $name = $_REQUEST['PINKSHIBA'];
     $headers = "From: $from";
     $subject = "You have a message from PinkShiba Website";
 
