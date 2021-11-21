@@ -1,8 +1,8 @@
 <?php
 
-    $to = "pinkshibatoken@gmail.com";
-    $from = $_REQUEST['email'];
-    $name = $_REQUEST['Name'];
+    $to = "someone@gmail.com";
+    $from = $_REQUEST['pinkshibatoken@gmail.com'];
+    $name = $_REQUEST['pinkshibatoken'];
     $headers = "From: $from";
     $subject = "You have a message from PinkShiba Website";
 
@@ -16,14 +16,6 @@
 
     $body = "Here is the message you got:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
 
-   if( mail($to, $subject, $body, $headers)s)!==true)
-   {
-        die('Fail to send');
-
-
-    }
-    die('Success');
-
-    }
+    $send = mail($to, $subject, $body, $headers);
 
 ?>
