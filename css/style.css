@@ -854,6 +854,12 @@ body .theme-button:hover span {opacity: 1;}
    bottom:-160px;
   width: 100%;
 }
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .apps-overview.color-two {background: #111ba8;margin-bottom: 0;}
 .apps-overview.color-two .inner-wrapper .button-group li a:hover {background: #00c9d7;color: #fff;}
 .apps-overview.color-three {background: #ff0078; padding: 160px 0 250px;margin-bottom: 50px;}
