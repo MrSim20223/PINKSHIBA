@@ -592,6 +592,107 @@ body .theme-button:hover span {opacity: 1;}
   animation: scale-up 5s ease-in-out alternate infinite;
 }
 /*----------------- Stock Market Price -----------------*/
+.video-one__content {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e9e9e9;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  position: relative;
+}
+.video-one__content:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: #1b2143;
+  opacity: .7;
+  border-radius: 15px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.video-one__content > img {
+  border-radius: 15px;
+  width: 100%;
+}
+.video-one__content:hover:before {
+  opacity: .3;
+}
+.video-one__content:hover .video-one__link {
+  color: #fff;
+  background-color: #ff0078;
+}
+.video-one__link {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background-color: #ff0078;
+  text-align: center;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  color: #1b2143;
+  -webkit-transition: background .4s ease;
+  transition: background .4s ease;
+}
+.video-one__link:hover {
+  color: #fff;
+  background-color: #ff0078;
+  -webkit-animation: playMover 1s linear 0s infinite alternate;
+          animation: playMover 1s linear 0s infinite alternate;
+}
+.video-one__link i {
+  font-size: 38px;
+}
+@-webkit-keyframes playMover {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  25%, 70% {
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+@keyframes playMover {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  25%, 70% {
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
 .stock-market-price {padding-bottom: 50px;}
 .stock-market-price #market-rate {padding: 10px 15px;}
 .stock-market-price #market-rate .main-wrapper {
